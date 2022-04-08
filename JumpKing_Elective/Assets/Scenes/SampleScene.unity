@@ -408,7 +408,7 @@ GameObject:
   - component: {fileID: 1641137727}
   - component: {fileID: 1641137726}
   - component: {fileID: 1641137728}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Platforms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2622,7 +2622,7 @@ GameObject:
   - component: {fileID: 1649596711}
   - component: {fileID: 1649596710}
   - component: {fileID: 1649596714}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2667,11 +2667,11 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_GravityScale: 4
+  m_Material: {fileID: 6200000, guid: cde8afea0e0c17a40a290660c2da1d1e, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -2755,6 +2755,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  isGrounded: 0
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 128
+  bounceMat: {fileID: 6200000, guid: 83953c24474208e4e93e2f6b87eb9f75, type: 2}
+  normalMat: {fileID: 6200000, guid: cde8afea0e0c17a40a290660c2da1d1e, type: 2}
+  canJump: 1
+  jumpHeight: 0
 --- !u!1 &2009499648
 GameObject:
   m_ObjectHideFlags: 0
