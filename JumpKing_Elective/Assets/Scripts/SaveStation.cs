@@ -16,8 +16,8 @@ public class SaveStation : MonoBehaviour
     }
     private PlayerData _localPlayerData = new PlayerData()
     {
-        positionX = posX,
-        positionY = posY,
+        //positionX = posX,
+       //positionY = posY,
     };
     [ContextMenu("Save")]
     public void Save()
