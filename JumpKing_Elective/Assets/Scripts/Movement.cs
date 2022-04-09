@@ -7,17 +7,18 @@ public class Movement : MonoBehaviour
     public float moveSpeed = 1f;
     private float moveInput;
     public bool isGrounded;
+
     private Rigidbody2D rb;
-    private SpriteRenderer sr;
     public LayerMask groundMask;
+
     public PhysicsMaterial2D bounceMat, normalMat;
+
     public bool canJump = true;
     public float jumpHeight = 0f;
 
     private void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
-        sr = gameObject.GetComponent<SpriteRenderer>();
     }
 
     private void Update()
